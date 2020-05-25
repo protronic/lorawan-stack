@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Setting a few NS default MAC settings from the command line.
+
 ### Security
 
 ## [3.8.5] - 2020-07-06

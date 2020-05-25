@@ -26,8 +26,11 @@ The `ns.downlink-priorities` options configure priorities Network Server assigns
 The `ns.default-mac-settings` options configure default device MAC configuration parameters Network Server uses if not configured in device's MAC settings.
 
 - `ns.default-mac-settings.adr-margin`: The default margin Network Server should add in ADR requests
+- `ns.default-mac-settings.adr-ack-delay-exponent`: The default ADR ACK delay exponent
+- `ns.default-mac-settings.adr-ack-limit-exponent`: The default ADR ACK limit exponent
 - `ns.default-mac-settings.class-b-timeout`: Deadline for a device in class B mode to respond to requests from the Network Server
 - `ns.default-mac-settings.class-c-timeout`: Deadline for a device in class C mode to respond to requests from the Network Server
+- `ns.default-mac-settings.desired-max-duty-cycle`: Desired maximum Duty Cycle
 - `ns.default-mac-settings.desired-rx1-delay`: Desired Rx1Delay value Network Server should use
 - `ns.default-mac-settings.status-count-periodicity`: Number of uplink messages after which a DevStatusReq MACCommand shall be sent by Network Server
 - `ns.default-mac-settings.status-time-periodicity`: The interval after which a DevStatusReq MACCommand shall be sent by Network Server

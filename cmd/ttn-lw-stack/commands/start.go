@@ -181,6 +181,7 @@ var startCommand = &cobra.Command{
 		if start.NetworkServer || startDefault {
 			redisConsumerGroup := "ns"
 
+			config.NS = networkserver.HandleDefaultConfigValues(config.NS)
 			logger.Info("Setting up Network Server")
 			if err := initRedisMutex(); err != nil {
 				return shared.ErrInitializeNetworkServer.WithCause(err)

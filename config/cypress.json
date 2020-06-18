@@ -1,5 +1,18 @@
 {
-  "baseUrl": "http://localhost:8080",
   "viewportHeight": 900,
-  "viewportWidth": 1440
+  "viewportWidth": 1440,
+  "consoleRootPath": "/console",
+  "oauthRootPath": "/oauth",
+  "assetsRootPath": "/assets",
+  "language": "en",
+  "isConfig": { "enabled": true, "base_url": "http://localhost:8080/api/v3" },
+  "asConfig": { "enabled": true, "base_url": "http://localhost:8080/api/v3" },
+  "nsConfig": { "enabled": true, "base_url": "http://localhost:8080/api/v3" },
+  "jsConfig": { "enabled": true, "base_url": "http://localhost:8080/api/v3" },
+  "gsConfig": { "enabled": true, "base_url": "http://localhost:8080/api/v3" },
+  "siteName": "The Things Stack for LoRaWAN",
+  "siteSubTitle": "Management platform for The Things Stack for LoRaWAN",
+  "defaultCommandTimeout": 10000,
+  "ignoreTestFiles": "!*.spec.js",
+  "coverage": true
 }

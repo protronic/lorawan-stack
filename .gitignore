@@ -113,5 +113,8 @@ ca.pem
 /cypress/screenshots
 /cypress/videos
 
+# Istanbul coverage
+.nyc_output
+
 # Release files
 /snapcraft.login

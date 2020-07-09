@@ -1,8 +1,11 @@
 ---
-title: "User Management with the Console"
+title: "User Management"
 description: ""
-weight: 1
 ---
+
+This section contains instructions for managing users with the CLI.
+
+<!--more-->
 
 User management can be found in the user dropdown in the top right corner of the Console.
 
@@ -16,15 +19,15 @@ The list of users is shown immediately after going to **User Management** in the
 
 ## Searching for Users
 
-You can search for users by ID using the search field above the list of users. It is currently not possible to search for users by other fields than the user ID using the Console, but you can [do this with the CLI]({{< relref "../cli#searching-for-users" >}}).
+You can search for users by ID using the search field above the list of users. It is currently not possible to search for users by other fields than the user ID using the Console, but you can [do this with the CLI]({{< relref "../../cli/user#searching-for-users" >}}).
 
 ## Creating Users
 
-It is currently not possible to create users in the Console, but users can register themselves, or you can [create them with the CLI]({{< relref "../cli#creating-users" >}}).
+It is currently not possible to create users in the Console, but users can register themselves, or you can [create them with the CLI]({{< relref "../../cli/user#creating-users" >}}).
 
 ## Inviting Users
 
-It is currently not possible to invite users from the Console, but you can [do this with the CLI]({{< relref "../cli#inviting-users" >}}).
+It is currently not possible to invite users from the Console, but you can [do this with the CLI]({{< relref "../../cli/user#inviting-users" >}}).
 
 ## Updating Users
 

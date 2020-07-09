@@ -1,64 +1,11 @@
 ---
-title: "User Management with the CLI"
+title: "User Management"
 description: ""
-weight: 2
 ---
 
-## Listing Users
+This section contains instructions for managing users with the CLI.
 
-To list users with the CLI, use the `users list` command. Make sure to specify the fields you're interested in.
-
-```bash
-$ ttn-lw-cli users list --name --state --admin
-```
-
-Output:
-
-```json
-[{
-  "ids": {
-    "user_id": "new-user"
-  },
-  "created_at": "2019-12-19T09:10:31.426Z",
-  "updated_at": "2019-12-19T09:10:40.527Z",
-  "name": "New User"
-}, {
-  "ids": {
-    "user_id": "admin"
-  },
-  "created_at": "2019-12-18T14:54:12.723Z",
-  "updated_at": "2019-12-18T14:54:12.723Z",
-  "state": "STATE_APPROVED",
-  "admin": true
-}]
-```
-
-> **TIP:** Use the pagination flags `--limit` and `--page` when there are many users.
-
-
-## Searching for Users
-
-To search for users with the CLI, use the `users search` command. Make sure to specify the fields you're interested in. We'll search for users with IDs that contain "new":
-
-```bash
-$ ttn-lw-cli users search --id-contains new --name
-```
-
-Output:
-
-```json
-[{
-  "ids": {
-    "user_id": "new-user"
-  },
-  "created_at": "2019-12-19T09:10:31.426Z",
-  "updated_at": "2019-12-19T09:10:40.527Z",
-  "name": "New User"
-}]
-```
-
-> **TIP:** Use the pagination flags `--limit` and `--page` when there are many users.
-
+<!--more-->
 
 ## Creating Users
 
@@ -126,7 +73,61 @@ And delete an invitation if you want to revoke it:
 
 ```bash
 $ ttn-lw-cli users invitations delete colleague@thethings.network
+
+## Listing Users
+
+To list users with the CLI, use the `users list` command. Make sure to specify the fields you're interested in.
+
+```bash
+$ ttn-lw-cli users list --name --state --admin
 ```
+
+Output:
+
+```json
+[{
+  "ids": {
+    "user_id": "new-user"
+  },
+  "created_at": "2019-12-19T09:10:31.426Z",
+  "updated_at": "2019-12-19T09:10:40.527Z",
+  "name": "New User"
+}, {
+  "ids": {
+    "user_id": "admin"
+  },
+  "created_at": "2019-12-18T14:54:12.723Z",
+  "updated_at": "2019-12-18T14:54:12.723Z",
+  "state": "STATE_APPROVED",
+  "admin": true
+}]
+```
+
+> **TIP:** Use the pagination flags `--limit` and `--page` when there are many users.
+
+
+## Searching for Users
+
+To search for users with the CLI, use the `users search` command. Make sure to specify the fields you're interested in. We'll search for users with IDs that contain "new":
+
+```bash
+$ ttn-lw-cli users search --id-contains new --name
+```
+
+Output:
+
+```json
+[{
+  "ids": {
+    "user_id": "new-user"
+  },
+  "created_at": "2019-12-19T09:10:31.426Z",
+  "updated_at": "2019-12-19T09:10:40.527Z",
+  "name": "New User"
+}]
+```
+
+> **TIP:** Use the pagination flags `--limit` and `--page` when there are many users.
 
 ## Updating Users
 

@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Generic encryption/decryption to KeyVault.
 - Option to ignore log messages for selected gRPC method on success (see `grpc.log-ignore-methods` option).
 - CLI auto-completion support (see `ttn-lw-cli complete` command).
+- Option to require TLS on connections to Redis servers (see `redis.tls.require` and related options).
 
 ### Changed
 

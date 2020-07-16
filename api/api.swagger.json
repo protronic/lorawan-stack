@@ -9027,7 +9027,7 @@
         "simulated": {
           "type": "boolean",
           "format": "boolean",
-          "description": "Signals if the traffic is from the Network Server or is simulated."
+          "description": "Signals if the message is coming from the Network Server or is simulated."
         }
       }
     },

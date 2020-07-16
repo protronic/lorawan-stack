@@ -297,7 +297,7 @@ message ApplicationUp {
     ApplicationServiceData service_data = 13;
   }
 
-  // Signals if the traffic is from the Network Server or is simulated.
+  // Signals if the message is coming from the Network Server or is simulated.
   bool simulated = 14;
 }
 

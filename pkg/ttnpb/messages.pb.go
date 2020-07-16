@@ -1100,7 +1100,7 @@ type ApplicationUp struct {
 	//	*ApplicationUp_LocationSolved
 	//	*ApplicationUp_ServiceData
 	Up isApplicationUp_Up `protobuf_oneof:"up"`
-	// Signals if the traffic is from the Network Server or is simulated.
+	// Signals if the message is coming from the Network Server or is simulated.
 	Simulated            bool     `protobuf:"varint,14,opt,name=simulated,proto3" json:"simulated,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
